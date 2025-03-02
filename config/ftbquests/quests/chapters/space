@@ -1,0 +1,465 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "space"
+	group: ""
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_1_rocket"
+		tag: {
+			BotariumData: {
+				StoredFluids: [{
+					Amount: 0L
+					Fluid: "minecraft:empty"
+				}]
+			}
+		}
+	}
+	id: "36DC3B6E020DB444"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "48830FAB37CFC365"
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "ad_astra:earth_globe"
+				id: "3C21AAE29EBB5F65"
+				type: "dimension"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["775CA8B52807331B"]
+			id: "41C5F5C0C4E74EF2"
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "24547CD10912801D"
+				type: "dimension"
+			}]
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "037C975A5D7A127D"
+			tasks: [{
+				id: "18C075573C33B67C"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["037C975A5D7A127D"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: {
+					BotariumData: {
+						StoredFluids: [{
+							Amount: 0L
+							Fluid: "minecraft:empty"
+						}]
+					}
+				}
+			}
+			id: "7E02B7D219A80F6D"
+			tasks: [
+				{
+					id: "0108756908E90F78"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rocket"
+						tag: {
+							BotariumData: {
+								StoredFluids: [{
+									Amount: 0L
+									Fluid: "minecraft:empty"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3861E7DDA4990E8F"
+					item: "gtceu:rocket_fuel_bucket"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E02B7D219A80F6D"]
+			icon: {
+				Count: 1
+				id: "ad_astra:space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "775CA8B52807331B"
+			tasks: [
+				{
+					id: "190CC9862132104D"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53673614570B2233"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C78897701BC4692"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "196C4958313333E5"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79ACE0A0F09C1FFC"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["48830FAB37CFC365"]
+			id: "0568A94AE4AE6513"
+			shape: "gear"
+			tasks: [{
+				id: "19736A7C59C5EB8F"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["775CA8B52807331B"]
+			id: "36D8969B4D356A4C"
+			tasks: [{
+				id: "0368D5FD58C8422D"
+				item: {
+					Count: 1
+					id: "ad_astra:gas_tank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["36D8969B4D356A4C"]
+			id: "6D55A35CF9DDB647"
+			tasks: [{
+				id: "4DB7FAD39B3FED2C"
+				item: {
+					Count: 1
+					id: "ad_astra_giselle_addon:oxygen_can"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["48830FAB37CFC365"]
+			id: "68A9CFFF72D521E7"
+			invisible: true
+			shape: "heart"
+			tasks: [{
+				id: "340380A11033CF33"
+				item: "ad_astra:earth_globe"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["41C5F5C0C4E74EF2"]
+			id: "5B8D67855BD3E2BD"
+			invisible: true
+			shape: "heart"
+			tasks: [{
+				id: "79A8246537F062DC"
+				item: "ad_astra:moon_globe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7E02B7D219A80F6D"]
+			id: "4AACA82B5AAD062A"
+			tasks: [{
+				id: "2150469A19A5DBA5"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 0L
+								Fluid: "minecraft:empty"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AACA82B5AAD062A"]
+			icon: "ad_astra:mars_globe"
+			id: "5003CF4243C8F3AC"
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "ad_astra:mars"
+				icon: "ad_astra:mars_globe"
+				id: "0B7B14963892552F"
+				type: "dimension"
+			}]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "20EE64731152909F"
+			tasks: [{
+				id: "11C2D031987BAC0F"
+				item: "ad_astra:steel_cable"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["20EE64731152909F"]
+			id: "0DF8908614BAF6B9"
+			tasks: [{
+				id: "774D6DAC11AD8FE6"
+				item: "ad_astra:desh_cable"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "24691CF6AF4EFB28"
+			tasks: [{
+				id: "41510A4ED5ACB956"
+				item: "ad_astra:oxygen_distributor"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "30BE5C77561F613F"
+			tasks: [{
+				id: "2D6D427820139191"
+				item: "ad_astra:oxygen_sensor"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["775CA8B52807331B"]
+			id: "664050773BFB5E4A"
+			tasks: [{
+				id: "70EE260A5A5E90EB"
+				item: "ad_astra:ti_69"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "4FAA006B6D8CEE7B"
+			tasks: [{
+				id: "5926F7A1FAF99EE3"
+				item: "ad_astra:gravity_normalizer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["33CF6DD98745471D"]
+			id: "037260CDC9CB2AC5"
+			tasks: [{
+				id: "7F6CD4A6708364D0"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rover"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["775CA8B52807331B"]
+			id: "151AAC8A69C56785"
+			tasks: [{
+				id: "00B1C2AD59F5F979"
+				item: {
+					Count: 1
+					id: "ad_astra:zip_gun"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 0L
+								Fluid: "minecraft:empty"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5003CF4243C8F3AC"]
+			id: "220887264283FF4A"
+			invisible: true
+			shape: "heart"
+			tasks: [{
+				id: "53DD01842D3FB517"
+				item: "ad_astra:mars_globe"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "334A60E4FF00DEFE"
+			tasks: [{
+				id: "59AD2693829AC8B0"
+				item: "ad_astra:solar_panel"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "552271F2BF0CF563"
+			tasks: [{
+				id: "7E76AA415C456FB1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ad_astra:flags)"
+					}
+				}
+				title: "Any #ad_astra:flags"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "33CF6DD98745471D"
+			tasks: [{
+				id: "13925F904C8B892A"
+				item: "ad_astra:radio"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["20EE64731152909F"]
+			id: "3A8DE826F2E49DA6"
+			tasks: [{
+				id: "26A2978E619B0C42"
+				item: "ad_astra:cable_duct"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0568A94AE4AE6513"]
+			id: "1EAC85C230391EAF"
+			tasks: [{
+				id: "4E9751AB1AE3FBBC"
+				item: "ad_astra:fluid_pipe_duct"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["41C5F5C0C4E74EF2"]
+			id: "53D407EEF77FA6C9"
+			shape: "gear"
+			tasks: [{
+				icon: "ae2:mysterious_cube"
+				id: "6364DA0FD6019320"
+				observe_type: 0
+				timer: 0L
+				to_observe: "'ae2:mysterious_cube'"
+				type: "observation"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+	]
+	title: "Space"
+}
