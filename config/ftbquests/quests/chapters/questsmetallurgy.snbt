@@ -21,25 +21,28 @@
 			linked_quest: "48A8E3210B2BAE1C"
 			shape: "gear"
 			size: 4.0d
-			x: -4.5d
-			y: -32.0d
+			x: -14.0d
+			y: -15.0d
 		}
 		{
 			id: "292F0E5F9768917A"
 			linked_quest: "5301A38F7EA81140"
-			x: -5.5d
-			y: -17.5d
+			x: 4.5d
+			y: -14.0d
 		}
 		{
 			id: "0F7AB259776E037A"
 			linked_quest: "5E186CD5E83BFDF0"
-			x: -3.5d
-			y: -17.5d
+			x: 4.5d
+			y: -16.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["003EB186944BD36E"]
+			dependencies: [
+				"003EB186944BD36E"
+				"04B0C7F4EB4DE37C"
+			]
 			id: "25551B8DB67BE0A9"
 			shape: "gear"
 			size: 4.0d
@@ -48,45 +51,29 @@
 				item: "minecraft:bucket"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -4.0d
+			x: 42.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["29D53D587AD1B0E6"]
 			id: "003EB186944BD36E"
 			size: 2.0d
-			tasks: [
-				{
-					id: "7218CBCCA313343B"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+			tasks: [{
+				id: "7218CBCCA313343B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
 						}
-						id: "tfc:metal/bucket/red_steel"
 					}
-					type: "item"
+					id: "tfc:metal/bucket/red_steel"
 				}
-				{
-					id: "41001037515E3120"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/bucket/blue_steel"
-					}
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: -5.0d
+				type: "item"
+			}]
+			x: 38.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["195DB41394C9FF08"]
@@ -105,8 +92,8 @@
 				title: "Any #tfc:red_or_blue_anvil"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -4.5d
+			x: 34.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["0C728B7B596E9B33"]
@@ -127,8 +114,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
-			y: -4.5d
+			x: 28.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["4310B619B57276ED"]
@@ -149,8 +136,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: -4.5d
+			x: 23.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["358571B6E692F198"]
@@ -171,8 +158,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: -19.5d
+			x: 1.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["133DB645B6E0585A"]
@@ -188,13 +175,14 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
 					}
 				}
-				title: "Any #tfc:bronze_anvils"
+				title: "Bronze anvil"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -25.5d
+			x: -9.0d
+			y: -15.0d
 		}
 		{
+			dependencies: ["48A8E3210B2BAE1C"]
 			id: "133DB645B6E0585A"
 			tasks: [{
 				count: 7L
@@ -206,25 +194,16 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:bronze_double_ingot)item(gtceu:black_bronze_double_ingot)item(gtceu:bismuth_bronze_double_ingot))"
 					}
 				}
-				title: "Any #forge:double_ingots/bronze"
+				title: "Bronze double ingots"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -29.0d
+			x: -11.0d
+			y: -15.0d
 		}
 		{
-			dependencies: [
-				"021D3DEEB15A3D17"
-				"3C173357029AB649"
-			]
+			dependencies: ["444795160B59C924"]
 			id: "0A92F5C4BB6AF972"
-			size: 2.0d
 			tasks: [
-				{
-					id: "323A28991DD98C8D"
-					item: "tfc:bloomery"
-					type: "item"
-				}
 				{
 					id: "15B937178A5E5D8E"
 					item: {
@@ -268,20 +247,42 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: -23.0d
+			x: -3.5d
+			y: -15.0d
 		}
 		{
-			dependencies: ["12CB3B9ADC586521"]
+			dependencies: [
+				"058B9AE68E0690EA"
+				"792FB3426AB3AA1A"
+				"12CB3B9ADC586521"
+			]
+			icon: "tfc:blast_furnace"
 			id: "5996A3A0D475B8A6"
 			size: 2.0d
-			tasks: [{
-				id: "3A2A3286F594F977"
-				item: "tfc:blast_furnace"
-				type: "item"
-			}]
-			x: -4.5d
-			y: -8.0d
+			tasks: [
+				{
+					id: "3A2A3286F594F977"
+					item: "tfc:blast_furnace"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "3C35961DA008FE25"
+					item: {
+						Count: 12
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:wrought_iron_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["0A92F5C4BB6AF972"]
@@ -301,8 +302,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: -21.5d
+			x: -1.5d
+			y: -15.0d
 		}
 		{
 			id: "021D3DEEB15A3D17"
@@ -311,11 +312,11 @@
 				item: "tfc:bellows"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -23.0d
+			x: -6.0d
+			y: -17.0d
 		}
 		{
-			dependencies: ["5996A3A0D475B8A6"]
+			dependencies: ["65F3EB93F70E714C"]
 			id: "4310B619B57276ED"
 			tasks: [{
 				count: 7L
@@ -332,10 +333,11 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: -6.5d
+			x: 23.5d
+			y: -15.0d
 		}
 		{
+			dependencies: ["271EAE0282832838"]
 			id: "0C728B7B596E9B33"
 			tasks: [{
 				count: 7L
@@ -352,10 +354,11 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.5d
+			x: 28.5d
+			y: -15.0d
 		}
 		{
+			dependencies: ["0C728B7B596E9B33"]
 			id: "195DB41394C9FF08"
 			tasks: [{
 				count: 7L
@@ -367,10 +370,11 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:blue_steel_double_ingot)item(gtceu:red_steel_double_ingot))"
 					}
 				}
+				title: "Colored Steel"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.5d
+			x: 31.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["3C173357029AB649"]
@@ -409,8 +413,8 @@
 				type: "item"
 			}]
 			title: "Pressure Cookin'"
-			x: 0.0d
-			y: -25.5d
+			x: -9.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["174DA15847665CF8"]
@@ -447,8 +451,8 @@
 					type: "observation"
 				}
 			]
-			x: -7.5d
-			y: -16.5d
+			x: 4.5d
+			y: -12.0d
 		}
 		{
 			id: "53E1383F12EC6765"
@@ -465,8 +469,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -16.5d
+			x: 4.5d
+			y: -21.0d
 		}
 		{
 			dependencies: [
@@ -485,10 +489,11 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:raw_graphite)item(gtceu:rich_raw_graphite)item(gtceu:poor_raw_graphite)item(gtceu:graphite_dust)item(gtceu:crushed_graphite_ore))"
 					}
 				}
+				title: "Graphite"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -16.5d
+			x: 4.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["0139038AA49CD2A6"]
@@ -498,11 +503,11 @@
 				item: "tfc:fire_clay"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -13.0d
+			x: 9.0d
+			y: -15.0d
 		}
 		{
-			dependencies: ["2C76EE197C14B0DC"]
+			dependencies: ["6E56AC6CB224AB1C"]
 			id: "12CB3B9ADC586521"
 			shape: "octagon"
 			size: 3.0d
@@ -511,8 +516,8 @@
 				item: "tfc:crucible"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -10.5d
+			x: 15.0d
+			y: -15.0d
 		}
 		{
 			dependencies: [
@@ -541,7 +546,383 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
+			x: 7.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["29D53D587AD1B0E6"]
+			id: "04B0C7F4EB4DE37C"
+			size: 2.0d
+			tasks: [{
+				id: "1CDAB9780082BE74"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/bucket/blue_steel"
+				}
+				type: "item"
+			}]
+			x: 38.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			hide_dependency_lines: true
+			id: "792FB3426AB3AA1A"
+			tasks: [{
+				id: "739949A37AA36BF2"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:tuyeres)"
+					}
+				}
+				match_nbt: false
+				title: "Any Tuyeres"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"5157705DAAC2C814"
+				"0FE6D3FA91D7E96E"
+			]
+			id: "058B9AE68E0690EA"
+			size: 2.0d
+			tasks: [{
+				count: 4L
+				id: "60514170B827AAF4"
+				item: "tfc:fire_bricks"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["1E19C0298280D4ED"]
+			id: "0FE6D3FA91D7E96E"
+			tasks: [{
+				id: "0CD921C808C611D1"
+				item: "tfc:ceramic/fire_brick"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			id: "1E19C0298280D4ED"
+			tasks: [{
+				id: "7DEF2EB3A7FB91AF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_fire_brick"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			id: "6E56AC6CB224AB1C"
+			tasks: [{
+				id: "102CBE08D8A3697F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_crucible"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			id: "1B88BCBEFCDFEF3E"
+			tasks: [{
+				id: "19A90039C68B88E6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfcchannelcasting:unfired_channel"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			id: "2170F0FD79F94370"
+			tasks: [{
+				id: "56EF58DBB0B510A5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfcchannelcasting:unfired_mold_table"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			id: "4C69C6DEEEEE2177"
+			tasks: [{
+				id: "0215251BF79A447B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_fire_ingot_mold"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"57A961BF9EE3F0A4"
+				"4C69C6DEEEEE2177"
+			]
+			id: "2EBFB201E7C03C03"
+			tasks: [{
+				id: "1C592D1053E25DD9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/fire_ingot_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"1A28C8439C0DEC68"
+				"1B88BCBEFCDFEF3E"
+			]
+			id: "0D39BF5BDE03C8D0"
+			tasks: [{
+				id: "62A2B5417A43E80E"
+				item: "tfcchannelcasting:channel"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"5773060592E254AF"
+				"2170F0FD79F94370"
+			]
+			id: "7CC72A59BEB311C5"
+			tasks: [{
+				id: "30D4176A74336A44"
+				item: "tfcchannelcasting:mold_table"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"021D3DEEB15A3D17"
+				"3C173357029AB649"
+			]
+			icon: "tfc:bloomery"
+			id: "444795160B59C924"
+			size: 2.0d
+			tasks: [
+				{
+					id: "43D585B441B19E14"
+					item: "tfc:bloomery"
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "061994CC59394818"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:stone_bricks)"
+						}
+					}
+					title: "Bricks"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["5996A3A0D475B8A6"]
+			id: "65F3EB93F70E714C"
+			tasks: [
+				{
+					id: "599BE5BC467585AC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/pig_iron"
+					}
+					type: "item"
+				}
+				{
+					id: "2944ADFE6BD3B017"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/high_carbon_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "1C5793436BD80FD7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:steel_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["4310B619B57276ED"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:black_steel_ingot"
+			}
+			id: "271EAE0282832838"
+			tasks: [
+				{
+					id: "7A1F4A70671C0999"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/weak_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "283420A12A1D60C8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/pig_iron"
+					}
+					type: "item"
+				}
+				{
+					id: "2627CD92FCC06649"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/high_carbon_black_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "1BB727D364BDC2A7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:black_steel_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Black Steel"
+			x: 26.0d
 			y: -15.0d
 		}
 	]
