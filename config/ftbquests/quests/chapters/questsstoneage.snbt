@@ -640,7 +640,7 @@
 				}
 			]
 			title: "Pebbles with ore"
-			x: 7.0d
+			x: 14.5d
 			y: 8.0d
 		}
 		{
@@ -763,7 +763,7 @@
 		{
 			dependencies: [
 				"618090A6D0D3B2F1"
-				"669F84C6A2A64145"
+				"2C31315F1EFB4C07"
 			]
 			id: "6EEBBF78AFA3F42A"
 			tasks: [{
@@ -1095,20 +1095,6 @@
 						}
 						id: "tfc:ceramic/vessel"
 						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "1ABB2C093670CA44"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/ingot_mold"
 					}
 					type: "item"
 				}
@@ -1774,6 +1760,26 @@
 			}]
 			x: 17.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["669F84C6A2A64145"]
+			id: "2C31315F1EFB4C07"
+			tasks: [{
+				id: "548C7B17D9668069"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/ingot_mold"
+				}
+				type: "item"
+			}]
+			x: 17.5d
+			y: 8.0d
 		}
 	]
 	subtitle: ["{quests.stoneage.subtitle}"]
