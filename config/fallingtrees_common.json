@@ -5,15 +5,15 @@
   "treeLifetimeLength": 4.0,
   "dynamicMiningSpeed": {
     "disable": false,
-    "speedMultiplication": 0.5,
+    "speedMultiplication": 0.05,
     "maxSpeedMultiplication": 16.0
   },
   "trees": {
     "standardTree": {
       "algorithm": {
         "maxLeavesRadius": 15,
-        "maxLogAmount": 256,
-        "shouldFallOnMaxLogAmount": false,
+        "maxLogAmount": 512,
+        "shouldFallOnMaxLogAmount": true,
         "shouldIgnorePersistentLeaves": true
       },
       "logFilter": {
@@ -78,15 +78,21 @@
     "mushroomTree": {
       "stemFilter": {
         "whitelistedTags": [],
-        "whitelist": [],
+        "whitelist": [
+          "minecraft:mushroom_stem"
+        ],
         "blacklist": []
       },
       "capFilter": {
         "whitelistedTags": [],
-        "whitelist": [],
+        "whitelist": [
+          "minecraft:red_mushroom_block",
+          "minecraft:brown_mushroom_block",
+          "minecraft:shroomlight"
+        ],
         "blacklist": []
       },
-      "enabled": false,
+      "enabled": true,
       "onlyFallWithRequiredTool": false,
       "allowedToolFilter": {
         "whitelistedTags": [],

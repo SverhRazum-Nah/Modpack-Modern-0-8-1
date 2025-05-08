@@ -1,17 +1,49 @@
 {
-	"name": "Dealing with Hazards",
-	"icon": "gtceu:hazmat_headpiece",
+	"name": "Hazardous Materials",
+	"icon": "createdeco:decal_skull",
 	"category": "tfc:tfg_ores",
 	"priority": true,
 	"sortnum": 1,
+	"read_by_default": true,
 	"pages": [
 		{
-			"type": "patchouli:text",
-			"text": "Some ores are hazardous! Having them in your inventory will deal continuous poison damage.$(br2)There's a full $(thing)hazmat suit$(), but that's all the way in $(thing)MV$(), so what can you do instead?$(br2)Here's some tips until TFG is able to update to a newer version of a GregTech that provides its own primitive protection equipment."
+			"type": "patchouli:spotlight",
+			"title": "Hazardous Materials",
+			"item": "gtceu:cobaltite_dust",
+			"text": "Some ores and dusts are hazardous and can cause negative effects or even kill you if they are carried in your inventory.$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and $(thing)hazardous material suits$() later on can be used to counter these effects."
 		},
 		{
-			"type": "patchouli:text",
-			"text": "Later, if you want to move hazardous materials around, you can take them out of small vessels and into chests and machines by $(thing)Right-clicking$() on the vessel. This way, it will never enter your inventory!$(br2)Lastly, if you don't enjoy hazards, you can turn them off in the GregTech options."
+			"type": "patchouli:crafting",
+			"title": "Face Mask",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "The $(thing)Face Mask$() provides protection from any $(item)Inhalation$() hazards, such as Arsenicosis."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "Rubber gloves",
+			"link_recipes": true,
+			"text": "Rubber gloves can either be made from $(l:mechanics/leather_making)Leather$() and $(l:arborfirmacraft/making_rubber)Latex$(), or out of Rubber Sheets. They provide protection from any $(item)Skin Contact$() hazards, such as Berylliosis."
+		},
+		{
+			"type": "tfc:knapping_recipe",
+			"recipe": "tfchotornot:leather_knapping/mittens",
+			"text": "First, knap the leather into mittens."
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+			"text": "Mittens are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:latex_soaked_gloves",
+			"text": "Prepared leather gloves are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/oven)Oven$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -22,14 +54,8 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Containers",
-			"text": "As mentioned, the hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:mechanics/crankshaft)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$().",
+			"text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:tfg_tips/inventory_management)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$(). $(thing)Right-clicking$() while holding a vessel will allow direct transfer of it's contents to and from containers",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Armor",
-			"text": "Better armor will reduce the damage taken from hazardous materials.",
-			"item": { "tag": "minecraft:trimmable_armor" }
 		},
 		{
 			"type": "patchouli:spotlight",

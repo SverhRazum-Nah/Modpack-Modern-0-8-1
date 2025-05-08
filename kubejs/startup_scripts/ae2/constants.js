@@ -23,6 +23,7 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:entropy_manipulator',
     'ae2:charged_staff',
     'ae2:name_press',
+    'ae2:charger',
 
     // Блоки
     'ae2:vibration_chamber',
@@ -84,7 +85,8 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:silicon',
     'ae2:sky_dust',
     'ae2:creative_energy_cell',
-    'ae2:tiny_tnt'
+    'ae2:tiny_tnt',
+    'ae2:crystal_resonance_generator'
 ];
 
 // Glass Cable
